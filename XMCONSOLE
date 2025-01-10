@@ -6358,10 +6358,10 @@ end)
 
 addcmd('discord', {'support', 'help'}, function(args, speaker)
 	if everyClipboard then
-		toClipboard('https://discord.com/invite/dYHag43eeU')
-		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/dYHag43eeU')
+		toClipboard('discord.gg/N7QbJapSwX')
+		notify('Discord Invite', 'Copied: https://discord.gg/N7QbJapSwX')
 	else
-		notify('Discord Invite', 'discord.gg/dYHag43eeU')
+		notify('Discord Invite', 'discord.gg/N7QbJapSwX')
 	end
 	if httprequest then
 		httprequest({
