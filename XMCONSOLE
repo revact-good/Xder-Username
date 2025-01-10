@@ -207,7 +207,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "XMCONSOLE V" .. currentversion
+Title.Text = "XMCONSOLE V3"
 
 do
 	local emoji = ({
@@ -6357,10 +6357,10 @@ end)
 
 addcmd('discord', {'support', 'help'}, function(args, speaker)
 	if everyClipboard then
-		toClipboard('https://discord.com/invite/N7QbJapSwX')
-		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/N7QbJapSwX')
+		toClipboard('https://discord.gg/bqj79S5')
+		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/bqj79S5J')
 	else
-		notify('Discord Invite', 'discord.gg/N7QbJapSwX')
+		notify('Discord Invite', 'discord.gg/bqj79S5')
 	end
 	if httprequest then
 		httprequest({
@@ -12739,13 +12739,13 @@ IYMouse.Move:Connect(checkTT)
 
 task.spawn(function()
 	local success, latestVersionInfo = pcall(function() 
-		local versionJson = game:HttpGet('https://raw.githubusercontent.com/VALUEEEEEED/HPR-Admin-Console/refs/heads/main/XMVersion/')
+		local versionJson = game:HttpGet('https://raw.githubusercontent.com/VALUEEEEEED/HPR-A/master/XMVersion')
 		return HttpService:JSONDecode(versionJson)
 	end)
 
 	if success then
 		if currentVersion ~= latestVersionInfo.Version then
-			notify('Outdated','Your XMCONSOLE is outdated! Get the new ones: https://discord.gg/N7QbJapSwX')
+			notify('Outdated','Get the new version at https://discord.gg/bqj79S5J')
 		end
 
 		if latestVersionInfo.Announcement and latestVersionInfo.Announcement ~= '' then
