@@ -4322,7 +4322,7 @@ function autoComplete(str,curText)
 end
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'Credits', DESC= 'Creedits'}
+CMDs[#CMDs + 1] = {NAME = 'credits', DESC= 'Creedits'}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Roblox Scripts Server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'oldconsole', DESC = 'Loads old Roblox console'}
