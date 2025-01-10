@@ -7141,6 +7141,10 @@ addcmd('togglefly',{},function(args, speaker)
 		if not IsOnMobile then sFLY() else mobilefly(speaker) end
 	end
 end)
+addcmd('versioncheck', {cvs}, function(args,speaker)
+				notify('Version','Your version is 2.5')
+	end)
+end)
 
 CFspeed = 50
 addcmd('cframefly', {'cfly'}, function(args, speaker)
@@ -12746,7 +12750,7 @@ task.spawn(function()
 
 	if success then
 		if currentVersion ~= latestVersionInfo.Version then
-			notify('Outdated','Get the new version at infyiff.github.io')
+			notify('Weclome!','Hi! Welcome to XMCONSOLE!')
 		end
 
 		if latestVersionInfo.Announcement and latestVersionInfo.Announcement ~= '' then
