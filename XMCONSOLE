@@ -207,7 +207,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "XMCONSOLE V" .. currentVersion
+Title.Text = "XMCONSOLE V2"
 
 do
 	local emoji = ({
@@ -6357,7 +6357,7 @@ end)
 
 addcmd('discord', {'support', 'help'}, function(args, speaker)
 	if everyClipboard then
-		toClipboard('discord.gg/N7QbJapSwX')
+		toClipboard('https://discord.com/invite/N7QbJapSwX')
 		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/N7QbJapSwX')
 	else
 		notify('Discord Invite', 'discord.gg/N7QbJapSwX')
@@ -12739,13 +12739,13 @@ IYMouse.Move:Connect(checkTT)
 
 task.spawn(function()
 	local success, latestVersionInfo = pcall(function() 
-		local versionJson = game:HttpGet('https://raw.githubusercontent.com/VALUEEEEEED/HPR-Admin-Console/refs/heads/main/XMVersion')
+		local versionJson = game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/version')
 		return HttpService:JSONDecode(versionJson)
 	end)
 
 	if success then
 		if currentVersion ~= latestVersionInfo.Version then
-			notify('Outdated','Get the new version at https://github.com/VALUEEEEEED/HPR-Admin-Console/main/XMCONSOLE')
+			notify('Outdated','Welcome to XCONSOLE the outdated is false!')
 		end
 
 		if latestVersionInfo.Announcement and latestVersionInfo.Announcement ~= '' then
